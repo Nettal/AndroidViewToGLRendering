@@ -1,11 +1,13 @@
 package com.self.viewtoglrendering.cuberenerer;
 
+import android.content.Context;
+import android.os.Build;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-
-import android.content.Context;
+import java.nio.charset.StandardCharsets;
 
 public class RawResourceReader
 {
