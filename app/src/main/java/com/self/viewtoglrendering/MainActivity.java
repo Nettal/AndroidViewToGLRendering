@@ -1,20 +1,19 @@
 package com.self.viewtoglrendering;
 
-import android.graphics.Color;
 import android.opengl.GLSurfaceView;
-import android.support.v7.app.ActionBarActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
-import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
 import android.widget.Toast;
 
 import com.self.viewtoglrendering.cuberenerer.CubeGLRenderer;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +38,7 @@ public class MainActivity extends ActionBarActivity {
         mGLLinearLayout.setViewToGLRenderer(glRenderer);
 
         WebView mWebView = findViewById(R.id.web_view);
-        mWebView.setWebViewClient(new WebViewClient(){
+        mWebView.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageFinished(WebView view, String url) {
 
